@@ -1,0 +1,24 @@
+body {
+	padding: 0 30%;
+}
+
+#calcolatrice_wrapper {
+	width: 70%;
+
+}
+
+#display {
+	height: 70px;
+	background-color: green;
+	margin-bottom: 25px;
+	text-align: right;
+}
+
+button {
+	width: 24%;
+}
+
+
+.clear {
+	clear: both;
+}

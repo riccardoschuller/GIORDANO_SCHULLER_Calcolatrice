@@ -14,30 +14,32 @@
 	<div id="display"></div>
 
 	<!-- .operator per i tasti che non sono cifre -->
-	<button class="operator" id="reset">C</button>
-	<button class="operator" id="undo">CI</button>
-	<button class="operator" id="per">X</button>
+	<button class="operator" id="reset" data-ops="reset">C</button>
+	<button class="operator" id="undo" data-ops="undo">CI</button>
+	<button class="operator" id="per" data-ops="per">X</button>
+
+	<br class="clear">
 
 
 	<!-- .number per le cifre -->
-	<button class="number" id="sette">7</button>
-	<button class="number" id="otto">8</button>
-	<button class="number" id="nove">9</button>
-	<button class="operator" id="diviso">/</button>
+	<button class="number" id="sette" data-num="7" onClick="getNumber()">7</button>
+	<button class="number" id="otto" data-num="8">8</button>
+	<button class="number" id="nove" data-num="9">9</button>
+	<button class="operator" id="diviso" data-ops="diviso">/</button>
 
-	<button class="number" id="quattro">4</button>
-	<button class="number" id="cinque">5</button>
-	<button class="number" id="sei">6</button>
-	<button class="operator" id="meno">-</button>
+	<button class="number" id="quattro" data-num="4">4</button>
+	<button class="number" id="cinque" data-num="5">5</button>
+	<button class="number" id="sei" data-num="6">6</button>
+	<button class="operator" id="meno" data-ops="meno">-</button>
 
-	<button class="number" id="uno">1</button>
-	<button class="number" id="due">2</button>
-	<button class="number" id="tre">3</button>
-	<button class="operator" id="piu">+</button>
+	<button class="number" id="uno" data-num="1">1</button>
+	<button class="number" id="due" data-num="2">2</button>
+	<button class="number" id="tre" data-num="3">3</button>
+	<button class="operator" id="piu" data-ops="piu">+</button>
 
-	<button class="number" id="zero">0</button>
-	<button class="number" id="punto">.</button>
-	<button class="operator" id="uguale">=</button>
+	<button class="number" id="zero" data-num="0">0</button>
+	<button class="number" id="punto" data-num=".">.</button>
+	<button class="operator" id="uguale" data-ops="uguale">=</button>
 
 
 
