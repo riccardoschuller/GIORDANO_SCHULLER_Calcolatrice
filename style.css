@@ -1,5 +1,6 @@
 body {
 	padding: 0 30%;
+	margin-top: 6%;
 }
 
 #calcolatrice_wrapper {
@@ -12,10 +13,17 @@ body {
 	background-color: green;
 	margin-bottom: 25px;
 	text-align: right;
+	text-align: 50%;
+	font-size: 30px;
+	font-family: Digital-7;
 }
 
 button {
 	width: 24%;
+	height: 30px;
+	margin-bottom: 1.5%;
+	border-radius: 50px;
+
 }
 
 
