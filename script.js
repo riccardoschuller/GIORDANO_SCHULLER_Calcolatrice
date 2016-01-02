@@ -9,8 +9,22 @@ else{document.getElementById("display").innerHTML+=op;}
 }
 
 
-function risultato() { document.getElementById("display").innerHTML=eval(document.getElementById("display").innerHTML); }
+function risultato() 
 
-function cancella() { document.getElementById("display").innerHTML=document.getElementById("display").innerHTML.substring(0, document.getElementById("display").innerHTML.length-1); }
+{ document.getElementById("display").innerHTML=eval(document.getElementById("display").innerHTML); }
 
-function azzera() { document.getElementById("display").innerHTML="0"; }
+function cancella() 
+
+{ document.getElementById("display").innerHTML=document.getElementById("display").innerHTML.substring(0, document.getElementById("display").innerHTML.length-1); }
+
+function azzera() 
+
+{ document.getElementById("display").innerHTML="0"; }
+
+function radice()
+{
+document.getElementById("display").innerHTML=parseInt(document.getElementById("display").innerHTML);
+document.getElementById("display").innerHTML=Math.sqrt(document.getElementById("display").innerHTML)
+
+
+}
