@@ -1,11 +1,10 @@
-var numero = ""
-document.getElementById("display").innerHTML = numero;
 
 
+function n(op)
 
-function getNumber() {
-	numero = numero+document.getElementById("sette").getAttribute("data-num")
-
-	document.getElementById("display").innerHTML = numero;	
+{
+if(document.getElementById("display").innerHTML =="0" || document.getElementById("display").innerHTML==null)
+{document.getElementById("display").innerHTML=op;}
+else{document.getElementById("display").innerHTML+=op;}
 }
 

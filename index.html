@@ -14,34 +14,34 @@
 
 
 	<!-- il display dove verranno visualizzati i vari numeri -->
-	<div id="display"></div>
+	<div id="display" >0</div>
 
 	<!-- .operator per i tasti che non sono cifre -->
 	<button class="operator" id="reset" data-ops="reset">C</button>
 	<button class="operator" id="undo" data-ops="undo">CI</button>
-	<button class="operator" id="per" data-ops="per">X</button>
+	<button class="operator" id="per" value="*" onClick="n(this.value)">X</button>
 
 	<br class="clear">
 
 
 	<!-- .number per le cifre -->
-	<button class="number" id="sette" data-num="7" onClick="getNumber()">7</button>
-	<button class="number" id="otto" data-num="8">8</button>
-	<button class="number" id="nove" data-num="9">9</button>
-	<button class="operator" id="diviso" data-ops="diviso">/</button>
+	<button class="number" id="sette" value="7" onClick="n(this.value)">7</button>
+	<button class="number" id="otto" value="8" onClick="n(this.value)">8</button>
+	<button class="number" id="nove" value="9" onClick="n(this.value)">9</button>
+	<button class="operator" id="diviso" value="/" onClick="n(this.value)">/</button>
 
-	<button class="number" id="quattro" data-num="4">4</button>
-	<button class="number" id="cinque" data-num="5">5</button>
-	<button class="number" id="sei" data-num="6">6</button>
-	<button class="operator" id="meno" data-ops="meno">-</button>
+	<button class="number" id="quattro" value="4" onClick="n(this.value)">4</button>
+	<button class="number" id="cinque" value="5" onClick="n(this.value)">5</button>
+	<button class="number" id="sei" value="6" onClick="n(this.value)">6</button>
+	<button class="operator" id="meno" value="-" onClick="n(this.value)">-</button>
 
-	<button class="number" id="uno" data-num="1">1</button>
-	<button class="number" id="due" data-num="2">2</button>
-	<button class="number" id="tre" data-num="3">3</button>
-	<button class="operator" id="piu" data-ops="piu">+</button>
+	<button class="number" id="uno" value="1" onClick="n(this.value)">1</button>
+	<button class="number" id="due" value="2" onClick="n(this.value)">2</button>
+	<button class="number" id="tre" value="3" onClick="n(this.value)">3</button>
+	<button class="operator" id="piu" value="+" onClick="n(this.value)">+</button>
 
-	<button class="number" id="zero" data-num="0">0</button>
-	<button class="number" id="punto" data-num=".">.</button>
+	<button class="number" id="zero" value="0" onClick="n(this.value)">0</button>
+	<button class="number" id="punto" value="." onClick="n(this.value)">.</button>
 	<button class="operator" id="uguale" data-ops="uguale">=</button>
 
 
