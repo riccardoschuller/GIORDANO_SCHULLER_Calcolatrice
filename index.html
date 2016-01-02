@@ -17,8 +17,8 @@
 	<div id="display" >0</div>
 
 	<!-- .operator per i tasti che non sono cifre -->
-	<button class="operator" id="reset" data-ops="reset">C</button>
-	<button class="operator" id="undo" data-ops="undo">CI</button>
+	<button class="operator" id="reset" onClick="azzera()">C</button>
+	<button class="operator" id="undo" onClick="cancella()">CI</button>
 	<button class="operator" id="per" value="*" onClick="n(this.value)">X</button>
 
 	<br class="clear">
@@ -42,7 +42,7 @@
 
 	<button class="number" id="zero" value="0" onClick="n(this.value)">0</button>
 	<button class="number" id="punto" value="." onClick="n(this.value)">.</button>
-	<button class="operator" id="uguale" data-ops="uguale">=</button>
+	<button class="operator" id="uguale" onClick="risultato()">=</button>
 
 
 
