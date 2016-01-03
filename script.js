@@ -54,7 +54,8 @@ function radice()
 sound.load()
 	sound.play();
 document.getElementById("display").innerHTML=parseInt(document.getElementById("display").innerHTML);
-document.getElementById("display").innerHTML=Math.sqrt(document.getElementById("display").innerHTML)
+document.getElementById("display").innerHTML=Math.sqrt(document.getElementById("display").innerHTML);
+finito = true;
 
 
 }
@@ -62,6 +63,20 @@ document.getElementById("display").innerHTML=Math.sqrt(document.getElementById("
 function styleplus() {
 	stylecount = stylecount + 1
 	if (stylecount == 1) {
-		document.getElementsByTagName("link")[0].setAttribute("href" , "")
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/black.css")
+	}
+	else{
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
+	};
+}
+
+
+function styleminus() {
+	stylecount = stylecount - 1
+	if (stylecount == 1) {
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/black.css")
+	}
+	else {
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
 	};
 }
