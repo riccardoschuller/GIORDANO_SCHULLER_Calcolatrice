@@ -1,7 +1,7 @@
 body {
 	padding: 0 30%;
 	margin-top: 6%;
-	
+
 
 }
 
@@ -32,6 +32,7 @@ body {
 	font-family: Digital-7;
 	border-radius: 3px;
 	overflow: hidden;
+	opacity: 0.5;
 }
 
 button {
