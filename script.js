@@ -1,8 +1,9 @@
 // var che trova il suono
 var sound = document.getElementById("sound");
 // var che capisce se l'operazione è finita
-var finito = false 
+var finito = false ;
 
+var stylecount = 0;
 // funzione che riporta numeri e operatori nell'espressione e nel display
 function n(op)
 
@@ -56,4 +57,11 @@ document.getElementById("display").innerHTML=parseInt(document.getElementById("d
 document.getElementById("display").innerHTML=Math.sqrt(document.getElementById("display").innerHTML)
 
 
+}
+
+function styleplus() {
+	stylecount = stylecount + 1
+	if (stylecount == 1) {
+		document.getElementsByTagName("link")[0].setAttribute("href" , "")
+	};
 }
