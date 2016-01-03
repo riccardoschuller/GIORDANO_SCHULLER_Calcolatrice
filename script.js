@@ -1,28 +1,57 @@
+// var che trova il suono
+var sound = document.getElementById("sound");
+// var che capisce se l'operazione è finita
+var finito = false 
 
-
+// funzione che riporta numeri e operatori nell'espressione e nel display
 function n(op)
 
 {
-if(document.getElementById("display").innerHTML =="0" || document.getElementById("display").innerHTML==null)
-{document.getElementById("display").innerHTML=op;}
+	//parte il suono
+	sound.load()
+	sound.play();
+	// se il numero è 0 o si è gia ottenuto il risultato dell'operazione inizia da capo
+if(document.getElementById("display").innerHTML =="0" || document.getElementById("display").innerHTML==null 
+	|| finito == true)
+{document.getElementById("display").innerHTML=op;
+finito = false}
 else{document.getElementById("display").innerHTML+=op;}
 }
 
-
+// funzione che esegue l'espressione scritta
 function risultato() 
 
-{ document.getElementById("display").innerHTML=eval(document.getElementById("display").innerHTML); }
+{
+sound.load()
+	sound.play();
+ document.getElementById("display").innerHTML=eval(document.getElementById("display").innerHTML);
+ finito= true; }
 
+
+// funzione che cancella l'ultimo valore digitato
 function cancella() 
 
-{ document.getElementById("display").innerHTML=document.getElementById("display").innerHTML.substring(0, document.getElementById("display").innerHTML.length-1); }
+{ 
+	sound.load()
+	sound.play();
+	document.getElementById("display").innerHTML=document.getElementById("display").innerHTML.substring(0, document.getElementById("display").innerHTML.length-1); }
 
+
+// funzione che azzera tutto
 function azzera() 
 
-{ document.getElementById("display").innerHTML="0"; }
+{ 
+	sound.load()
+	sound.play();
+	document.getElementById("display").innerHTML="0"; }
 
+
+// funzione che trova la radice quadrata del numero inserito nel display
 function radice()
 {
+
+sound.load()
+	sound.play();
 document.getElementById("display").innerHTML=parseInt(document.getElementById("display").innerHTML);
 document.getElementById("display").innerHTML=Math.sqrt(document.getElementById("display").innerHTML)
 
