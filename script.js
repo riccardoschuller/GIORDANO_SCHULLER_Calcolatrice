@@ -7,6 +7,8 @@ var sound = document.getElementById("sound");
 var finito = false ;
 
 var stylecount = 0;
+
+var punto = false;
 // funzione che riporta numeri e operatori nell'espressione e nel display
 function n(op)
 
@@ -36,7 +38,24 @@ if(document.getElementById("display").innerHTML =="0" || document.getElementById
 finito = false}
 else{document.getElementById("display").innerHTML+=op;}
 }
-operatore = true};
+operatore = true;
+punto = false};
+
+
+function addPunto(op)
+
+{if (punto == false) {
+	//parte il suono
+	sound.load()
+	sound.play();
+	// se il numero è 0 o si è gia ottenuto il risultato dell'operazione inizia da capo
+if(document.getElementById("display").innerHTML =="0" || document.getElementById("display").innerHTML==null 
+	|| finito == true)
+{document.getElementById("display").innerHTML=op;
+finito = false}
+else{document.getElementById("display").innerHTML+=op;}
+}
+punto = true};
 // funzione che esegue l'espressione scritta
 function risultato() 
 
@@ -44,7 +63,8 @@ function risultato()
 sound.load()
 	sound.play();
  document.getElementById("display").innerHTML=eval(document.getElementById("display").innerHTML);
- finito= true; }
+ finito= true;
+ punto = false; }
 
 
 // funzione che cancella l'ultimo valore digitato
@@ -62,7 +82,8 @@ function azzera()
 { 
 	sound.load()
 	sound.play();
-	document.getElementById("display").innerHTML="0"; }
+	document.getElementById("display").innerHTML="0";
+	punto = false; }
 
 
 // funzione che trova la radice quadrata del numero inserito nel display
@@ -83,7 +104,7 @@ function styleplus() {
 	if (stylecount == 1) {
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/black.css")
 	}
-	else{
+	else if (stylecount == 0){
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
 	};
 }
@@ -94,7 +115,7 @@ function styleminus() {
 	if (stylecount == 1) {
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/black.css")
 	}
-	else {
+	else if (stylecount == 0){
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
 	};
 }
