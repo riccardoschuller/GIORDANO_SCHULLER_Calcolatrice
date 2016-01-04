@@ -1,6 +1,6 @@
 body {
 	padding: 0 30%;
-	margin-top: 6%;
+	margin-top: 3%;
 
 
 }
@@ -43,7 +43,8 @@ button {
     margin-left: 3.5%;
     font-weight: bold;
     font-family: 'Orbitron', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
+    margin-top: 15px;
 }
 
 img {
