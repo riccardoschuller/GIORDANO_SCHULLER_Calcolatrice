@@ -1,3 +1,6 @@
+
+// var che permette di non aggiungere operatori su operatori disabilitando la calcolatrice
+var operatore = true;
 // var che trova il suono
 var sound = document.getElementById("sound");
 // var che capisce se l'operazione è finita
@@ -17,8 +20,23 @@ if(document.getElementById("display").innerHTML =="0" || document.getElementById
 {document.getElementById("display").innerHTML=op;
 finito = false}
 else{document.getElementById("display").innerHTML+=op;}
+operatore = false
 }
 
+function addOperatore(op)
+
+{if (operatore == false) {
+	//parte il suono
+	sound.load()
+	sound.play();
+	// se il numero è 0 o si è gia ottenuto il risultato dell'operazione inizia da capo
+if(document.getElementById("display").innerHTML =="0" || document.getElementById("display").innerHTML==null 
+	|| finito == true)
+{document.getElementById("display").innerHTML=op;
+finito = false}
+else{document.getElementById("display").innerHTML+=op;}
+}
+operatore = true};
 // funzione che esegue l'espressione scritta
 function risultato() 
 

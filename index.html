@@ -25,7 +25,7 @@
 	<button class="operator" id="reset" onClick="azzera()">C</button>
 	<button class="operator" id="undo" onClick="cancella()">CI</button>
 	<button class="operator" id="radice_q" onClick="radice()">&radic;</button>
-	<button class="operator" id="per" value="*" onClick="n(this.value)">X</button>
+	<button class="operator" id="per" value="*" onClick="addOperatore(this.value)">X</button>
 
 
 
@@ -34,17 +34,17 @@
 	<button class="number" id="sette" value="7" onClick="n(this.value)">7</button>
 	<button class="number" id="otto" value="8" onClick="n(this.value)">8</button>
 	<button class="number" id="nove" value="9" onClick="n(this.value)">9</button>
-	<button class="operator" id="diviso" value="/" onClick="n(this.value)">/</button>
+	<button class="operator" id="diviso" value="/" onClick="addOperatore(this.value)">/</button>
 
 	<button class="number" id="quattro" value="4" onClick="n(this.value)">4</button>
 	<button class="number" id="cinque" value="5" onClick="n(this.value)">5</button>
 	<button class="number" id="sei" value="6" onClick="n(this.value)">6</button>
-	<button class="operator" id="meno" value="-" onClick="n(this.value)">-</button>
+	<button class="operator" id="meno" value="-" onClick="addOperatore(this.value)">-</button>
 
 	<button class="number" id="uno" value="1" onClick="n(this.value)">1</button>
 	<button class="number" id="due" value="2" onClick="n(this.value)">2</button>
 	<button class="number" id="tre" value="3" onClick="n(this.value)">3</button>
-	<button class="operator" id="piu" value="+" onClick="n(this.value)">+</button>
+	<button class="operator" id="piu" value="+" onClick="addOperatore(this.value)">+</button>
 
 	<button class="number" id="zero" value="0" onClick="n(this.value)">0</button>
 	<button class="number" id="doppiozero" value="00" onClick="n(this.value)">00</button>
