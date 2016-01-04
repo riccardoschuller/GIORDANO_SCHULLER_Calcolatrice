@@ -106,6 +106,9 @@ function styleplus() {
 	}
 	else if (stylecount == 0){
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
+	}
+	else if (stylecount == 2){
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/fluid.css")
 	};
 }
 
@@ -117,5 +120,8 @@ function styleminus() {
 	}
 	else if (stylecount == 0){
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
+	}
+	else if (stylecount == 2){
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/fluid.css")
 	};
 }

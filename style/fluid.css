@@ -1,0 +1,98 @@
+body {
+	padding: 0 30%;
+	margin-top: 3%;
+
+
+}
+
+#scocca-calcolatrice {
+
+
+	background-color: #c2501c;
+	border-radius: 15px;
+	box-shadow: 3px 4px #8a8a8a, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	padding-top: 1%;
+	height: 500px;
+
+} 
+
+#calcolatrice_wrapper {
+	width: 70%;
+
+
+
+}
+
+#display {
+	height: 70px;
+	background-color: #989d97;
+	margin: 25px;
+	text-align: right;
+	text-align: 50%;
+	font-size: 70px;
+	font-family: Digital-7;
+	border-radius: 3px;
+	overflow: hidden;
+	
+}
+
+button {
+	width: 20%;
+	height: 60px;
+	margin-bottom: 1.5%;
+	display: inline-block;
+    margin-left: 3.5%;
+    font-weight: bold;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 3em;
+    margin-top: 5px;
+    background: none;
+    text-shadow:3px 3px #712e0d;
+    border:none;
+}
+
+button:active {
+	border: none;
+	font-size: 2.5em;
+	text-shadow:none;
+	outline: none;
+}
+
+button:focus {
+
+	outline: none;
+}
+
+img {
+	height: 1em;
+}
+
+#style_console {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 2em;
+}
+
+.operator {
+	
+	color: white;
+}
+
+.number {
+	color: white;
+}
+
+.clear {
+	clear: both;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		padding: 0px;
+
+	}
+
+	#calcolatrice_wrapper {
+		width: 100%;
+	}
+}
