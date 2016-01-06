@@ -140,8 +140,8 @@ function styleminus() {
  var fart = document.getElementById("fart")
 
  function nonpremereiltastohome() {
- 	var.load()
- 	var.play()
+ 	fart.load()
+ 	fart.play()
  };
 
 
