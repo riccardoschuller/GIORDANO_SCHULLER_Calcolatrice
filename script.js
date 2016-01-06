@@ -131,3 +131,24 @@ function styleminus() {
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/test.css")
 	};
 }
+
+
+
+
+
+
+ var fart = document.getElementById("fart")
+
+ function nonpremereiltastohome() {
+ 	var.load()
+ 	var.play()
+ };
+
+
+
+
+
+
+
+
+
