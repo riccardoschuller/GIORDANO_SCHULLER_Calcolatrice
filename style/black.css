@@ -17,9 +17,11 @@ body {
 
 #calcolatrice_wrapper {
 	width: 70%;
+}
 
 
-
+#tasto-home {
+	display: none;
 }
 
 #display {

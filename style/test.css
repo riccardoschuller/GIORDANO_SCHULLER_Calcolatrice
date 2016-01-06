@@ -1,0 +1,183 @@
+body {
+	padding: 0 30%;
+	margin-top: 0.5%;
+
+
+}
+
+#scocca-calcolatrice {
+
+
+	background-color: #000;
+	border-radius: 20px;
+	box-shadow: 3px 4px #8a8a8a, 0px 10px 15px rgba(0, 0, 0, 0.2);
+	padding-top: 1%;
+	padding-bottom: 0%;
+
+} 
+
+#calcolatrice_wrapper {
+	width: 70%;
+
+}
+
+#tasto-home {
+	font-size: 350%;
+	padding-left: 44.9%;
+}
+
+
+
+#display {
+	height: 70px;
+	background-color: #a2a29a;
+	margin: 25px;
+	text-align: right;
+	text-align: 50%;
+	font-size: 70px;
+	font-family: Digital-7;
+	border-radius: 3px;
+	overflow: hidden;
+	opacity: 0.5;
+}
+
+button {
+	width: 20%;
+	height: 60px;
+	margin-bottom: 1.5%;
+	display: inline-block;
+    margin-left: 3.5%;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+img {
+	height: 1em;
+}
+
+
+
+#style_console {
+	position: fixed;
+	bottom: 15.5%;
+	right: 41.5%;
+	text-align: center;
+	font-size: 2em;
+
+}
+
+#uno{
+	background-color: red;
+	color: white;
+}
+
+#due{
+	background-color: blue;
+	color: white;
+}
+
+#tre{
+	background-color: yellow;
+	color: white;
+}
+
+#quattro{
+	background-color: orange;
+	color: white;
+}
+
+#cinque{
+	background-color: purple;
+	color: white;
+}
+
+#sei{
+	background-color: pink;
+	color: white;
+}
+
+#sette{
+	background-color: gold;
+	color: white;
+}
+
+#otto{
+	background-color: green;
+	color: white;
+}
+
+#nove{
+	background-color: red;
+	color: white;
+}
+
+#zero {
+	background-color: purple;
+	color: white;
+}
+
+#doppiozero{
+	background-color: pink;
+	color: white;
+}
+
+#punto{
+	background-color: blue;
+	color: white;
+}
+
+#uguale{
+	background-color: yellow;
+	color: white;
+}
+
+#reset {
+	background-color: green;
+	color: white;
+}
+
+#undo {
+	background-color: orange;
+	color: white;
+}
+
+#radice_q {
+	background-color: gold;
+	color: white;
+}
+
+#per{
+	background-color: purple;
+	color: white;
+}
+
+#meno{
+	background-color: green;
+	color: white;
+}
+
+#piu{
+	background-color: orange;
+	color: white;
+}
+
+#diviso{
+	background-color: orange;
+	color: white;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+	body {
+		padding: 0px;
+
+	}
+
+	#calcolatrice_wrapper {
+		width: 100%;
+	}
+}

@@ -109,6 +109,9 @@ function styleplus() {
 	}
 	else if (stylecount == 2){
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/fluid.css")
+	}
+	else if (stylecount == 3){
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/test.css")
 	};
 }
 
@@ -123,5 +126,8 @@ function styleminus() {
 	}
 	else if (stylecount == 2){
 		document.getElementsByTagName("link")[0].setAttribute("href" , "style/fluid.css")
+	}
+	else if (stylecount == 3){
+		document.getElementsByTagName("link")[0].setAttribute("href" , "style/test.css")
 	};
 }

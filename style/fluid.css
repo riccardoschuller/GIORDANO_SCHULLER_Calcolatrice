@@ -75,6 +75,11 @@ img {
 	font-size: 2em;
 }
 
+
+#tasto-home {
+	display: none;
+}
+
 .operator {
 	
 	color: white;
