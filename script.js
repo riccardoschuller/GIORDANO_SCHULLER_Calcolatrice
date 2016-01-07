@@ -99,37 +99,40 @@ finito = true;
 
 }
 
+
+var listaStili = ["style/style.css", "style/black.css", "style/fluid.css","style/test.css"]
+
 function styleplus() {
 	stylecount = stylecount + 1
-	if (stylecount == 1) {
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/black.css")
-	}
-	else if (stylecount == 0){
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
-	}
-	else if (stylecount == 2){
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/fluid.css")
-	}
-	else if (stylecount == 3){
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/test.css")
+	if (stylecount > listaStili.length - 1) {
+		stylecount = 0;
 	};
+
+	if (stylecount < 0) {
+		stylecount = listaStili.length - 1
+	};
+	
+		document.getElementsByTagName("link")[0].setAttribute("href" , listaStili[stylecount])
+		console.log(stylecount)
+	
+
 }
 
 
 function styleminus() {
 	stylecount = stylecount - 1
-	if (stylecount == 1) {
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/black.css")
-	}
-	else if (stylecount == 0){
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/style.css")
-	}
-	else if (stylecount == 2){
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/fluid.css")
-	}
-	else if (stylecount == 3){
-		document.getElementsByTagName("link")[0].setAttribute("href" , "style/test.css")
+	if (stylecount > listaStili.length - 1) {
+		stylecount = 0;
 	};
+
+	if (stylecount < 0) {
+		stylecount = listaStili.length - 1
+	};
+	
+		document.getElementsByTagName("link")[0].setAttribute("href" , listaStili[stylecount])
+		console.log(stylecount)
+	
+
 }
 
 
