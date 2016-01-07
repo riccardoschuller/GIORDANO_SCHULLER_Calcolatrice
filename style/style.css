@@ -50,6 +50,7 @@ button {
 
 img {
 	height: 1em;
+	cursor: pointer;
 }
 
 #style_console {

@@ -65,7 +65,9 @@ button:focus {
 
 img {
 	height: 1em;
+	cursor: pointer;
 }
+
 
 #style_console {
 	position: fixed;
