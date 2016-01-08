@@ -100,7 +100,7 @@ finito = true;
 }
 
 
-var listaStili = ["style/style.css", "style/black.css", "style/fluid.css","style/test.css"]
+var listaStili = ["style/style.css", "style/black.css", "style/fluid.css","style/ipad.css"]
 
 function styleplus() {
 	stylecount = stylecount + 1
