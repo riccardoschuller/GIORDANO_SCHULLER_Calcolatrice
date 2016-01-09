@@ -108,9 +108,7 @@ function styleplus() {
 		stylecount = 0;
 	};
 
-	if (stylecount < 0) {
-		stylecount = listaStili.length - 1
-	};
+	
 	
 		document.getElementsByTagName("link")[0].setAttribute("href" , listaStili[stylecount])
 		console.log(stylecount)
@@ -121,9 +119,7 @@ function styleplus() {
 
 function styleminus() {
 	stylecount = stylecount - 1
-	if (stylecount > listaStili.length - 1) {
-		stylecount = 0;
-	};
+	
 
 	if (stylecount < 0) {
 		stylecount = listaStili.length - 1
